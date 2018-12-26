@@ -9,9 +9,13 @@ import siteNavigation from './moudles/siteNavigation';
 import music from './moudles/music';
 
 const routes = new VueRouter({
+    linkActiveClass: 'active',
+    linkExactActiveClass: 'active',
     routes: [{
         path: "/",
+        name: 'home',
         component: Home,
+        redirect: "siteNavigation",
         children: [
             ...siteNavigation,
             ...music

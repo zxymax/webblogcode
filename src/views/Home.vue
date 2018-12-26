@@ -86,4 +86,8 @@ export default {
   height: 100%;
   overflow: auto;
 }
+.md-content .md-list-item a.active {
+  text-decoration: underline;
+  color: #fff;
+}
 </style>
