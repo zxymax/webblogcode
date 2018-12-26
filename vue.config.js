@@ -1,4 +1,3 @@
-
 module.exports = {
     // 基本路径
     baseUrl: './',
@@ -6,6 +5,11 @@ module.exports = {
     outputDir: 'dist',
     // webpack-dev-server 相关配置
     devServer: {
-      port: 8080,
+        overlay: {
+            warnings: true,
+            errors: true
+        },
+        port: 8080,
+        lintOnSave: process.env.NODE_ENV !== 'production'
     }
-}  
+}

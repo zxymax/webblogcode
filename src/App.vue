@@ -1,26 +1,19 @@
 <template>
   <div id="app">
-    
-    <home />
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
-import Home from './components/Home.vue'
-
 export default {
-  name: 'app',
-  components: {
-    Home
-  }
-}
+  name: "app"
+};
 </script>
-
 <style>
-body,html{
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
-#app{
-    height: 100%;
+#app {
+  height: 100%;
 }
 </style>
